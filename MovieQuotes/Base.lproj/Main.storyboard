@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Qoutes-->
+        <!--Quotes-->
         <scene sceneID="xSQ-tJ-SJu">
             <objects>
                 <tableViewController id="cHw-jn-AlK" customClass="MovieQuotesTableViewController" customModule="MovieQuotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,13 +42,30 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoMovieQuotesCell" textLabel="Wkh-LX-4Fs" style="IBUITableViewCellStyleDefault" id="Ue7-JB-cXk">
+                                <rect key="frame" x="0.0" y="72" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ue7-JB-cXk" id="yiO-Qd-VAo">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="No Movie Quotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wkh-LX-4Fs">
+                                            <rect key="frame" x="20" y="0.0" width="794" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="cHw-jn-AlK" id="AXf-8d-tsy"/>
                             <outlet property="delegate" destination="cHw-jn-AlK" id="r6o-5R-ZcF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Qoutes" id="gYI-86-8Z4"/>
+                    <navigationItem key="navigationItem" title="Quotes" id="gYI-86-8Z4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAj-Fz-H1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

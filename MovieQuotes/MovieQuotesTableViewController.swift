@@ -21,13 +21,13 @@ class MovieQuotesTableViewController: UITableViewController {
     // self.clearsSelectionOnViewWillAppear = false
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    self.navigationItem.leftBarButtonItem = self.editButtonItem
 
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                         target: self,
                                                         action: #selector(showAddDialog))
-//    movieQuotes.append(MovieQuote(quote: "I'll be back", movie: "The Terminator"))
-//    movieQuotes.append(MovieQuote(quote: "Yo Adrian!", movie: "Rocky"))
+    movieQuotes.append(MovieQuote(quote: "I'll be back", movie: "The Terminator"))
+    movieQuotes.append(MovieQuote(quote: "Yo Adrian!", movie: "Rocky"))
   }
 
   @objc func showAddDialog() {
@@ -65,6 +65,15 @@ class MovieQuotesTableViewController: UITableViewController {
     present(alertController, animated: true, completion: nil)
   }
 
+  override func setEditing(_ editing: Bool, animated: Bool) {
+    if movieQuotes.count == 0 {
+      print("Don't allow editing mode at this time")
+      super.setEditing(false, animated: animated)
+    } else {
+      super.setEditing(editing, animated: animated)
+    }
+  }
+
   // MARK: - Table view data source
 
   //  override func numberOfSections(in tableView: UITableView) -> Int {
@@ -88,24 +97,25 @@ class MovieQuotesTableViewController: UITableViewController {
     return cell
   }
 
+  override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    return movieQuotes.count > 0
+  }
 
-  /*
-   // Override to support conditional editing of the table view.
-   override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-   // Return false if you do not want the specified item to be editable.
-   return true
-   }
-   */
+  // Override to support editing the table view.
+  override func tableView(_ tableView: UITableView,
+                          commit editingStyle: UITableViewCellEditingStyle,
+                          forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      movieQuotes.remove(at: indexPath.row)
+      if movieQuotes.count == 0 {
+        tableView.reloadData()
+        self.setEditing(false, animated: true)
+      } else {
+        tableView.deleteRows(at: [indexPath], with: .fade)
+      }
+    }
+  }
 
-  /*
-   // Override to support editing the table view.
-   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-   if editingStyle == .delete {
-   // Delete the row from the data source
-   tableView.deleteRows(at: [indexPath], with: .fade)
-   }
-   }
-   */
 
   /*
    // MARK: - Navigation

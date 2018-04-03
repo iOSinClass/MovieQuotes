@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD0B2601206D367200E37512 /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B2600206D367200E37512 /* MovieQuotesTableViewController.swift */; };
 		FD0B2603206D394C00E37512 /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B2602206D394C00E37512 /* MovieQuote.swift */; };
+		FD69D7142073D0FE00E4736D /* MovieQuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD69D7132073D0FE00E4736D /* MovieQuoteDetailViewController.swift */; };
 		FDD140B3206AA2DC00635468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD140B2206AA2DC00635468 /* AppDelegate.swift */; };
 		FDD140B6206AA2DC00635468 /* MovieQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDD140B4206AA2DC00635468 /* MovieQuotes.xcdatamodeld */; };
 		FDD140BD206AA2DC00635468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD140BB206AA2DC00635468 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		FD0B2600206D367200E37512 /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
 		FD0B2602206D394C00E37512 /* MovieQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
+		FD69D7132073D0FE00E4736D /* MovieQuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuoteDetailViewController.swift; sourceTree = "<group>"; };
 		FDD140AF206AA2DC00635468 /* MovieQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD140B2206AA2DC00635468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD140B5206AA2DC00635468 /* MovieQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieQuotes.xcdatamodel; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				FDD140B4206AA2DC00635468 /* MovieQuotes.xcdatamodeld */,
 				FD0B2600206D367200E37512 /* MovieQuotesTableViewController.swift */,
 				FD0B2602206D394C00E37512 /* MovieQuote.swift */,
+				FD69D7132073D0FE00E4736D /* MovieQuoteDetailViewController.swift */,
 			);
 			path = MovieQuotes;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD140B3206AA2DC00635468 /* AppDelegate.swift in Sources */,
+				FD69D7142073D0FE00E4736D /* MovieQuoteDetailViewController.swift in Sources */,
 				FD0B2603206D394C00E37512 /* MovieQuote.swift in Sources */,
 				FD0B2601206D367200E37512 /* MovieQuotesTableViewController.swift in Sources */,
 				FDD140B6206AA2DC00635468 /* MovieQuotes.xcdatamodeld in Sources */,

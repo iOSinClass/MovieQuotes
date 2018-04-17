@@ -9,11 +9,14 @@
 import UIKit
 
 class MovieQuote: NSObject {
+    var id: String?
   var quote: String
   var movie: String
+    var created: Date?
 
   init(quote: String, movie: String) {
     self.quote = quote
     self.movie = movie
+    //self.created = Date()
   }
 }

@@ -9,6 +9,8 @@
 import UIKit
 
 class MovieQuotesTableViewController: UITableViewController {
+    
+
 
   let movieQuoteCellIdentifier = "MovieQuoteCell"
   let noMovieQuotesCellIdentifier = "NoMovieQuotesCell"

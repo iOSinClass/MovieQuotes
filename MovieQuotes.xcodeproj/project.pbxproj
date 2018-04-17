@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AADC1A52086484300CC5D58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AADC1A42086484200CC5D58 /* GoogleService-Info.plist */; };
+		C2B681ADAC7ADCCF5EA50E1D /* Pods_MovieQuotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E4ACB2274CF7A34A86EFBA /* Pods_MovieQuotes.framework */; };
 		FD0B2601206D367200E37512 /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B2600206D367200E37512 /* MovieQuotesTableViewController.swift */; };
 		FD0B2603206D394C00E37512 /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B2602206D394C00E37512 /* MovieQuote.swift */; };
 		FD69D7142073D0FE00E4736D /* MovieQuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD69D7132073D0FE00E4736D /* MovieQuoteDetailViewController.swift */; };
 		FDD140B3206AA2DC00635468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD140B2206AA2DC00635468 /* AppDelegate.swift */; };
-		FDD140B6206AA2DC00635468 /* MovieQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDD140B4206AA2DC00635468 /* MovieQuotes.xcdatamodeld */; };
 		FDD140BD206AA2DC00635468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD140BB206AA2DC00635468 /* Main.storyboard */; };
 		FDD140BF206AA2DC00635468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD140BE206AA2DC00635468 /* Assets.xcassets */; };
 		FDD140C2206AA2DC00635468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD140C0206AA2DC00635468 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053B08207181A0B7FED9A6D2 /* Pods-MovieQuotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieQuotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieQuotes/Pods-MovieQuotes.debug.xcconfig"; sourceTree = "<group>"; };
+		0AADC1A42086484200CC5D58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CB86897EA4E7FA5ADF700AE /* Pods-MovieQuotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieQuotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieQuotes/Pods-MovieQuotes.release.xcconfig"; sourceTree = "<group>"; };
+		96E4ACB2274CF7A34A86EFBA /* Pods_MovieQuotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieQuotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0B2600206D367200E37512 /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
 		FD0B2602206D394C00E37512 /* MovieQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
 		FD69D7132073D0FE00E4736D /* MovieQuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuoteDetailViewController.swift; sourceTree = "<group>"; };
 		FDD140AF206AA2DC00635468 /* MovieQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD140B2206AA2DC00635468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDD140B5206AA2DC00635468 /* MovieQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieQuotes.xcdatamodel; sourceTree = "<group>"; };
 		FDD140BC206AA2DC00635468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDD140BE206AA2DC00635468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD140C1206AA2DC00635468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B681ADAC7ADCCF5EA50E1D /* Pods_MovieQuotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		954D6DF646528BC814F63086 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				053B08207181A0B7FED9A6D2 /* Pods-MovieQuotes.debug.xcconfig */,
+				4CB86897EA4E7FA5ADF700AE /* Pods-MovieQuotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCCEC0698AC36E0B4AE5418F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E4ACB2274CF7A34A86EFBA /* Pods_MovieQuotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDD140A6206AA2DC00635468 = {
 			isa = PBXGroup;
 			children = (
 				FDD140B1206AA2DC00635468 /* MovieQuotes */,
 				FDD140B0206AA2DC00635468 /* Products */,
+				954D6DF646528BC814F63086 /* Pods */,
+				BCCEC0698AC36E0B4AE5418F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,9 +87,9 @@
 				FDD140B2206AA2DC00635468 /* AppDelegate.swift */,
 				FDD140BB206AA2DC00635468 /* Main.storyboard */,
 				FDD140BE206AA2DC00635468 /* Assets.xcassets */,
+				0AADC1A42086484200CC5D58 /* GoogleService-Info.plist */,
 				FDD140C0206AA2DC00635468 /* LaunchScreen.storyboard */,
 				FDD140C3206AA2DC00635468 /* Info.plist */,
-				FDD140B4206AA2DC00635468 /* MovieQuotes.xcdatamodeld */,
 				FD0B2600206D367200E37512 /* MovieQuotesTableViewController.swift */,
 				FD0B2602206D394C00E37512 /* MovieQuote.swift */,
 				FD69D7132073D0FE00E4736D /* MovieQuoteDetailViewController.swift */,
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDD140C6206AA2DC00635468 /* Build configuration list for PBXNativeTarget "MovieQuotes" */;
 			buildPhases = (
+				4ABBB8915D68DC5A09960CA6 /* [CP] Check Pods Manifest.lock */,
 				FDD140AB206AA2DC00635468 /* Sources */,
 				FDD140AC206AA2DC00635468 /* Frameworks */,
 				FDD140AD206AA2DC00635468 /* Resources */,
+				6CF7F6DD7311D027710A3742 /* [CP] Embed Pods Frameworks */,
+				3582FE1BBFC1A25D897819A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,12 +160,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD140C2206AA2DC00635468 /* LaunchScreen.storyboard in Resources */,
+				0AADC1A52086484300CC5D58 /* GoogleService-Info.plist in Resources */,
 				FDD140BF206AA2DC00635468 /* Assets.xcassets in Resources */,
 				FDD140BD206AA2DC00635468 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3582FE1BBFC1A25D897819A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieQuotes/Pods-MovieQuotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ABBB8915D68DC5A09960CA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieQuotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF7F6DD7311D027710A3742 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieQuotes/Pods-MovieQuotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieQuotes/Pods-MovieQuotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDD140AB206AA2DC00635468 /* Sources */ = {
@@ -149,7 +247,6 @@
 				FD69D7142073D0FE00E4736D /* MovieQuoteDetailViewController.swift in Sources */,
 				FD0B2603206D394C00E37512 /* MovieQuote.swift in Sources */,
 				FD0B2601206D367200E37512 /* MovieQuotesTableViewController.swift in Sources */,
-				FDD140B6206AA2DC00635468 /* MovieQuotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +381,14 @@
 		};
 		FDD140C7206AA2DC00635468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053B08207181A0B7FED9A6D2 /* Pods-MovieQuotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGL44JG796;
+				DEVELOPMENT_TEAM = F562U49B59;
 				INFOPLIST_FILE = MovieQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.MovieQuotes";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.laeschjs.MovieQuotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -299,13 +397,14 @@
 		};
 		FDD140C8206AA2DC00635468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB86897EA4E7FA5ADF700AE /* Pods-MovieQuotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TGL44JG796;
+				DEVELOPMENT_TEAM = F562U49B59;
 				INFOPLIST_FILE = MovieQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.MovieQuotes";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.laeschjs.MovieQuotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -334,19 +433,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FDD140B4206AA2DC00635468 /* MovieQuotes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FDD140B5206AA2DC00635468 /* MovieQuotes.xcdatamodel */,
-			);
-			currentVersion = FDD140B5206AA2DC00635468 /* MovieQuotes.xcdatamodel */;
-			path = MovieQuotes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FDD140A7206AA2DC00635468 /* Project object */;
 }

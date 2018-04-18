@@ -7,16 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class MovieQuote: NSObject {
     var id: String?
   var quote: String
   var movie: String
-    var created: Date?
+    var created: Date!
 
   init(quote: String, movie: String) {
     self.quote = quote
     self.movie = movie
-    //self.created = Date()
+    self.created = Date()
   }
+    
+    init(documentSnapshot: DocumentSnapshot) {
+        self.id = documentSnapshot.documentID
+        let data = documentSnapshot.data()!
+        self.quote = data["quote"] as! String
+        self.movie = data["movie"] as! String
+        self.created = data["created"] as! Date
+    }
+    
+    var data: [String: Any] {
+    return ["quote": self.quote,
+            "movie": self.movie,
+            "created": self.created]
+    }
 }

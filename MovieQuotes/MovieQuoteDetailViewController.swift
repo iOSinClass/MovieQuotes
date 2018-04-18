@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class MovieQuoteDetailViewController: UIViewController {
 
   @IBOutlet weak var quoteLabel: UILabel!
   @IBOutlet weak var movieLabel: UILabel!
 
+    var movieQuoteRef: DocumentReference?
+    var movieQuoteListener: ListenerRegistration!
   var movieQuote: MovieQuote?
   
   override func viewDidLoad() {
@@ -22,7 +25,28 @@ class MovieQuoteDetailViewController: UIViewController {
                                                         action: #selector(showEditDialog))
   }
 
-  @objc func showEditDialog() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        updateView()
+        movieQuoteListener = movieQuoteRef?.addSnapshotListener({ (documentSnapshot, error) in
+            if let error = error {
+                print("Error getting document: \(error.localizedDescription)")
+            }
+            if !documentSnapshot!.exists {
+                print("This doc got deleted by someone else")
+                return
+            }
+            self.movieQuote = MovieQuote(documentSnapshot: documentSnapshot!)
+            self.updateView()
+        })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        movieQuoteListener.remove()
+    }
+
+    @objc func showEditDialog() {
     let alertController = UIAlertController(title: "Edit movie quote",
                                             message: "",
                                             preferredStyle: .alert)
@@ -52,11 +76,6 @@ class MovieQuoteDetailViewController: UIViewController {
     alertController.addAction(cancelAction)
     alertController.addAction(createQuoteAction)
     present(alertController, animated: true, completion: nil)
-  }
-
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    updateView()
   }
 
   func updateView() {

@@ -31,6 +31,7 @@ class MovieQuoteDetailViewController: UIViewController {
         movieQuoteListener = movieQuoteRef?.addSnapshotListener({ (documentSnapshot, error) in
             if let error = error {
                 print("Error getting document: \(error.localizedDescription)")
+                return
             }
             if !documentSnapshot!.exists {
                 print("This doc got deleted by someone else")
@@ -61,7 +62,7 @@ class MovieQuoteDetailViewController: UIViewController {
     let cancelAction = UIAlertAction(title: "Cancel",
                                      style: UIAlertActionStyle.cancel,
                                      handler: nil)
-    let createQuoteAction = UIAlertAction(
+    let editQuoteAction = UIAlertAction(
       title: "Edit",
       style: UIAlertActionStyle.default) {
         (action) in
@@ -71,10 +72,11 @@ class MovieQuoteDetailViewController: UIViewController {
 //        print("movieTextField = \(movieTextField.text!)")
         self.movieQuote?.quote = quoteTextField.text!
         self.movieQuote?.movie = movieTextField.text!
-        self.updateView()
+//        self.updateView()
+        self.movieQuoteRef?.setData(self.movieQuote!.data)
     }
     alertController.addAction(cancelAction)
-    alertController.addAction(createQuoteAction)
+    alertController.addAction(editQuoteAction)
     present(alertController, animated: true, completion: nil)
   }
 
